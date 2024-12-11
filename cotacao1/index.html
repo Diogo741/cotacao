@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotações de Moedas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="description" content="Cotação Brl em tempo real">
+</head>
+
+<body>
+  <header>
+    <h1>Cotações das Moedas</h1>
+  </header>
+  <main>
+    <section class="currency-table">
+      <h2>Principais Moedas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Moeda</th>
+            <th>Compra</th>
+            <th>Venda</th>
+          </tr>
+        </thead>
+        <tbody id="currency-data">
+        </tbody>
+      </table>
+    </section>
+    <section class="chart-container">
+      <div class="chart">
+        <canvas id="usdChart"></canvas>
+      </div>
+      <div class="chart">
+        <canvas id="eurChart"></canvas>
+      </div>
+      <div class="chart">
+        <canvas id="btcChart"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
